@@ -25,6 +25,25 @@
         color: #bdbdbd;
         margin: 20px 0;
     }
+
+    .upload-btn-wrapper {
+        background: #2f80ed;
+        font-size: 12px;
+        font-weight: 500;
+        color: #ffffff;
+        font-family: "Poppins";
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 8px 16px;
+        border-radius: 10px;
+
+        .upload-btn {
+            &[type="file"] {
+                display: none;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 425px) {

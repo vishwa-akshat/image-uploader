@@ -3,12 +3,14 @@ import Button from "../Button";
 import "./style.scss";
 
 type Props = {
-    imageLink: string;
+    imageLink: string | null;
 };
 
 export default function ImageLinkBlock({ imageLink }: Props) {
     const handleLinkCopy = () => {
-        navigator.clipboard.writeText(imageLink);
+        if (imageLink) {
+            navigator.clipboard.writeText(imageLink);
+        }
     };
     return (
         <div className="image-link-block">
