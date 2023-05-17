@@ -16,3 +16,9 @@
         color: #bdbdbd;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .drag-area {
+        width: 100%;
+    }
+}

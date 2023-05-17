@@ -1,5 +1,5 @@
-// import UploadCard from "../../components/UploadCard";
-// import UploadLoadingCard from "../../components/UploadLoadingCard";
+import UploadCard from "../../components/UploadCard";
+import UploadLoadingCard from "../../components/UploadLoadingCard";
 import UploadSuccessCard from "../../components/UploadSuccessCard";
 
 import "./style.scss";
@@ -7,9 +7,9 @@ import "./style.scss";
 export default function Home() {
     return (
         <div className="container">
-            {/* <UploadCard /> */}
+            <UploadCard />
             {/* <UploadLoadingCard /> */}
-            <UploadSuccessCard />
+            {/* <UploadSuccessCard /> */}
         </div>
     );
 }
