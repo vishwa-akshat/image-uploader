@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
 import DragArea from "../DragArea";
