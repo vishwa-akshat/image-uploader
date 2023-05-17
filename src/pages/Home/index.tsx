@@ -1,11 +1,13 @@
-import UploadCard from "../../components/UploadCard";
+// import UploadCard from "../../components/UploadCard";
+import UploadLoadingCard from "../../components/UploadLoadingCard";
 
 import "./style.scss";
 
 export default function Home() {
     return (
         <div className="container">
-            <UploadCard />
+            {/* <UploadCard /> */}
+            <UploadLoadingCard />
         </div>
     );
 }
