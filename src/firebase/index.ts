@@ -13,5 +13,3 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 
 export const storage = getStorage();
-
-export const storageRef = (name: { name: string }) => ref(storage, name);
