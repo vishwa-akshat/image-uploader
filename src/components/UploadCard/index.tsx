@@ -1,5 +1,3 @@
-import React from "react";
-
 import DragArea from "../DragArea";
 import Button from "../Button";
 
