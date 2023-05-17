@@ -1,0 +1,18 @@
+.drag-area {
+    padding: 35px 0 40px;
+    width: 338px;
+    border: 2px dashed #97bef4;
+    border-radius: 12px;
+    background: #f6f8fb;
+
+    .mountain-image {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .drag-text {
+        font-size: 12px;
+        font-weight: 500;
+        color: #bdbdbd;
+    }
+}

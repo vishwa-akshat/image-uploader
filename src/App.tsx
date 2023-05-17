@@ -1,8 +1,7 @@
 // import { useState } from "react";
 // import { storageRef } from "./firebase";
 // import { uploadBytesResumable, getDownloadURL } from "firebase/storage";
-
-import "./App.scss";
+import Home from "./pages/Home";
 
 function App() {
     // const [image, setImage] = useState(null);
@@ -48,12 +47,12 @@ function App() {
     //         }
     //     );
     // };
+    // <input type="file" onChange={handleChange} />
+    // <button onClick={handleUpload}>Upload</button>
 
     return (
-        <div>
-            hello
-            {/* <input type="file" onChange={handleChange} />
-            <button onClick={handleUpload}>Upload</button> */}
+        <div className="App">
+            <Home />
         </div>
     );
 }
