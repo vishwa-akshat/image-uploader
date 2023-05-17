@@ -11,3 +11,9 @@
         margin-bottom: 30px;
     }
 }
+
+@media only screen and (max-width: 425px) {
+    .upload-loading-card {
+        width: 85vw;
+    }
+}
