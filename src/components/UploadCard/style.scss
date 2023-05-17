@@ -1,0 +1,28 @@
+.upload-card-wrapper {
+    width: 400px;
+    padding: 36px 32px;
+    border-radius: 12px;
+    background: #ffffff;
+    text-align: center;
+
+    .heading {
+        font-size: 18px;
+        font-weight: 500;
+        color: #4f4f4f;
+        margin-bottom: 16px;
+    }
+
+    .sub-heading {
+        font-size: 10px;
+        font-weight: 500;
+        color: #828282;
+        margin-bottom: 30px;
+    }
+
+    .or-text {
+        font-size: 12px;
+        font-weight: 500;
+        color: #bdbdbd;
+        margin: 20px 0;
+    }
+}
