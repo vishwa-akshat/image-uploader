@@ -4,8 +4,13 @@ import "./style.scss";
 
 type Props = {
     children: React.ReactNode;
+    onClick?: () => void;
 };
 
-export default function Button({ children }: Props) {
-    return <button className="btn">{children}</button>;
+export default function Button({ children, onClick }: Props) {
+    return (
+        <button onClick={onClick} className="btn">
+            {children}
+        </button>
+    );
 }

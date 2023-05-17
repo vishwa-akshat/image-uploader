@@ -1,0 +1,32 @@
+.upload-success-card {
+    width: 400px;
+    padding: 36px 32px;
+    border-radius: 12px;
+    background: #ffffff;
+    text-align: center;
+
+    .heading {
+        font-size: 18px;
+        font-weight: 500;
+        color: #4f4f4f;
+        margin-bottom: 25px;
+    }
+
+    .done-icon-wrapper {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        background: #219653;
+        .done-icon {
+            width: 35px;
+        }
+    }
+
+    .uploaded-image {
+        width: 100%;
+        border-radius: 12px;
+        object-fit: cover;
+        margin-bottom: 25px;
+    }
+}
