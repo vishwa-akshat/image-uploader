@@ -53,6 +53,7 @@ export default function UploadCard() {
                     type="file"
                     className="upload-btn"
                     onChange={handleChange}
+                    accept="image/*"
                 />
                 Choose a file
             </label>

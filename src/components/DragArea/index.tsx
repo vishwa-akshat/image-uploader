@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 
@@ -20,9 +20,21 @@ export default function DragArea() {
         handleUpload(acceptedFiles[0]);
     }, []);
 
-    const { getRootProps, getInputProps, isDragActive } = useDropzone({
-        onDrop,
-    });
+    const { fileRejections, getRootProps, getInputProps, isDragActive } =
+        useDropzone({
+            onDrop,
+            accept: {
+                "image/jpeg": [],
+                "image/png": [],
+            },
+        });
+
+    useEffect(() => {
+        if (fileRejections.length !== 0) {
+            alert(fileRejections[0].errors[0].message);
+            window.location.reload();
+        }
+    }, [fileRejections]);
 
     const handleUpload = (image: any) => {
         const storageRef = ref(storage, `images/${image.name}`);
@@ -51,7 +63,7 @@ export default function DragArea() {
 
     return (
         <div className="drag-area" {...getRootProps()}>
-            <input {...getInputProps()} />
+            <input accept="image/*" {...getInputProps()} />
             <img src={mountain} alt="image" className="mountain-image" />
             {isDragActive ? (
                 <p className="drag-text">Drop the files here ...</p>
