@@ -1,13 +1,15 @@
 import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
+console.log(import.meta.env.VITE_APP_ID);
+
 const firebaseConfig = {
-    apiKey: "AIzaSyAOeGWI64p9Bln_3Z759F90W7YKCXhKjjk",
-    authDomain: "image-uploader-e0f67.firebaseapp.com",
-    projectId: "image-uploader-e0f67",
-    storageBucket: "image-uploader-e0f67.appspot.com",
-    messagingSenderId: "776831422376",
-    appId: "1:776831422376:web:3139e9631c05073885d79d",
+    apiKey: import.meta.env.VITE_API_KEY,
+    authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_APP_ID,
 };
 
 export const app = initializeApp(firebaseConfig);
