@@ -1,4 +1,5 @@
 import { initializeApp } from "firebase/app";
+import { initializeAppCheck, ReCaptchaV3Provider } from "firebase/app-check";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
@@ -13,3 +14,8 @@ const firebaseConfig = {
 export const app = initializeApp(firebaseConfig);
 
 export const storage = getStorage();
+
+export const appCheck = initializeAppCheck(app, {
+    provider: new ReCaptchaV3Provider(import.meta.env.VITE_SITE_KEY),
+    isTokenAutoRefreshEnabled: true,
+});
