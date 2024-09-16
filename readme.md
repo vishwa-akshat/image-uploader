@@ -1,4 +1,4 @@
-# Image Uploader App
+# Image Uploader Web Application
 
 This is an image uploader app built with React, Zustand, Sass, and Firebase. The app allows users to upload images and obtain a link for each uploaded image.
 
